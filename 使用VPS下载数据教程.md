@@ -1,6 +1,6 @@
 #使用VPS下载数据教程
 
-作者：费庆林         邮箱：cocoa9th@gmail.com
+Author:Silence         Email:cocoa9th@gmail.com
 
 ## 简介
 
