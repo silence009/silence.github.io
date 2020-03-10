@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Soot Spirits</title>
+ <link href="https://qinglin.ml/atom.xml" rel="self"/>
+ <link href="https://qinglin.ml"/>
+ <updated>2020-03-10T20:16:12+08:00</updated>
+ <id>https://qinglin.ml</id>
+ <author>
+   <name>silence</name>
+   <email>cocoa9th@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>使用vps下载数据教程</title>
+   <link href="https://qinglin.ml/2020/03/10/%E4%BD%BF%E7%94%A8VPS%E4%B8%8B%E8%BD%BD%E6%95%B0%E6%8D%AE%E6%95%99%E7%A8%8B/"/>
+   <updated>2020-03-10T00:00:00+08:00</updated>
+   <id>https://qinglin.ml/2020/03/10/使用VPS下载数据教程</id>
+   <content type="html">&lt;h1 id=&quot;使用vps下载数据教程&quot;&gt;使用VPS下载数据教程&lt;/h1&gt;
+
+&lt;p&gt;Author:Silence
+Email:cocoa9th@gmail.com&lt;/p&gt;
+
+&lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
+
+&lt;p&gt;入门生物信息学我们首先需要有可分析数据，才能进行后续操作。但目前国内网络环境的限制，使得我们很难畅快地从各大数据库下载数据。今天就为大家推荐一种简单快捷的下载方式——使用VPS下载，再使用FileZilla软件下载到本地。&lt;/p&gt;
+
+&lt;h2 id=&quot;vps选择&quot;&gt;VPS选择&lt;/h2&gt;
+
+&lt;p&gt;这里我给大家推荐我一直使用的vultr公司的VPS服务器，大家可以使用我下面发的链接注册使用（PS.如果注册使用的人多我可以免费给大家提供FQ工具)。vultr公司VPS服务器优点：速度不错、稳定且性价比高；按小时计费，能够随时开通和删除服务器。当然大家也可以自行选择，Google搜索可以找到一大堆VPS。&lt;/p&gt;
+
+&lt;p&gt;##购买VPS&lt;/p&gt;
+
+&lt;p&gt;vultr注册地址：https://www.vultr.com/?ref=8250130&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/006y8mN6gy1g8lvllet39j31mj0u0gs2.jpg&quot; alt=&quot;Screen Shot 2019-11-04 at 11.14.31 AM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;注册好后登陆即进入上述页面，点击Billing可以进行充值。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;充值可以选择支付宝或微信，但单次最少充值10美元；推荐选择外币信用卡或者Paypal充值，可选择任意金额，如果只用来下载数据那充值1美元就足够啦。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;服务器配置及价格&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;5美元/月的服务器配置信息： 单核 1G内存 25G SSD硬盘 带宽峰值100M 1000G流量/月&lt;/p&gt;
+
+&lt;p&gt;10美元/月的服务器配置信息： 单核 2G内存 55G SSD硬盘 带宽峰值100M 2000G流量/月&lt;/p&gt;
+
+&lt;p&gt;20美元/月的服务器配置信息： 2cpu 4G内存 80G SSD硬盘 带宽峰值100M 3000G流量/月&lt;/p&gt;
+
+&lt;p&gt;40美元/月的服务器配置信息： 4cpu 8G内存 160G SSD硬盘 带宽峰值100M 4000G流量/月&lt;/p&gt;
+
+&lt;p&gt;充值完成后，可根据下图提示开通服务器。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;服务器的选择可根据自己下载文件大小选择，如下载30G大小的文件可选择10美元/月的服务器，开通后每小时&lt;strong&gt;10/30/24=0.0139美元&lt;/strong&gt;，下载完成后即可把服务器删除，删除后就不会再扣费，算下来一小时成本不到0.1元。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;开通及删除服务器步骤&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;第一步&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/006y8mN6gy1g8m1bd4p8bj31mj0u0q9u.jpg&quot; alt=&quot;Screen Shot 2019-11-04 at 11.14.31 AM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;第二步&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/006y8mN6gy1g8m1bcz6lwj31k80u019o.jpg&quot; alt=&quot;Screen Shot 2019-11-04 at 3.18.56 PM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;第三步&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/006y8mN6gy1g8m1h8hr2ej31kc0u04b7.jpg&quot; alt=&quot;Screen Shot 2019-11-04 at 3.18.56 PM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;第四步：查看服务器信息及删除服务器&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/006y8mN6gy1g8m1o2fgj0j31nt0u0dnd.jpg&quot; alt=&quot;Screen Shot 2019-11-04 at 3.31.17 PM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/006y8mN6gy1g8m1o9k6quj31nr0u07f7.jpg&quot; alt=&quot;Screen Shot 2019-11-04 at 3.30.38 PM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;通过上述步骤，我们已经成功部署了一台Ubuntu服务器。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;服务器类最好选择Ubuntu，自带wget不需要额外的环境配置。另外，下载工具也可以使用健明老师之前推荐的prefetch等，具体方法请自行查找。&lt;/p&gt;
+
+&lt;p&gt;接下来我们通过Terminal连接服务器，下载ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE60nnn/GSE60607/suppl/GSE60607_RAW.tar的数据。&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#首先查看服务器能否在国内访问&lt;/span&gt;
+ping 167.179.75.187
+&lt;span class=&quot;c&quot;&gt;# Request timeout for icmp_seq 0&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#一直显示即为无法连接IP，请重新部署服务器&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;#64 bytes from 149.248.2.86: icmp_seq=0 ttl=47 time=4729.195 ms&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#有该显示即为可以连接上&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;#连接到服务器，IP地址及密码可在步骤四查看&lt;/span&gt;
+ssh root@167.179.75.187
+&lt;span class=&quot;c&quot;&gt;#复制粘贴输入密码即可登录&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;mkdir &lt;/span&gt;data
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;data
+wget ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE60nnn/GSE60607/suppl/GSE60607_RAW.tar
+&lt;span class=&quot;c&quot;&gt;#速度：最高可达17M/s左右，最低6M/s左右，全程基本保持最高速度，偶有波动；25.6G文件总耗时27min左右&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-lh&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#查看下载情况&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#total 26G&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#-rw-r--r-- 1 root root 26G Nov  4 08:14 GSE60607_RAW.tar&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;下载速度展示&lt;/strong&gt;
+ &lt;img src=&quot;https://tva1.sinaimg.cn/large/006y8mN6gy1g8m334vz1zj30vm0gl47q.jpg&quot; alt=&quot;Screen Shot 2019-11-04 at 3.50.57 PM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/006y8mN6gy1g8m34malqqj30vo0izwp5.jpg&quot; alt=&quot;Screen Shot 2019-11-04 at 4.17.00 PM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;##使用FileZilla下载到本地&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/006y8mN6gy1g8m30kqadgj316m0u0tx9.jpg&quot; alt=&quot;Screen Shot 2019-11-04 at 4.10.50 PM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/006y8mN6gy1g8m30qo6q0j316m0u01kx.jpg&quot; alt=&quot;Screen Shot 2019-11-04 at 4.17.58 PM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;下载到本地速度取决于自己的网速。下载完成后就可删除服务器，避免产生不必要的费用。以后下载再创建一个新服务器即可。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>

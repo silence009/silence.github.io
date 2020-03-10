@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/normalize.css"/>
+  <link rel="stylesheet" href="/assets/css/bulma.css"/>
+  <link rel="stylesheet" href="/assets/css/custom.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/syntax.css" type="text/css">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <title>
+    
+      使用vps下载数据教程 &middot; Soot Spirits
+    
+  </title>
+
+</head>
+
+
+<body>
+
+<section class="hero is-dark">
+  <div class="hero-body">
+    <div class="container">
+        <h1 class="title">
+          <span class="typewrite" data-period="2000" data-type='[ "hello", "namaste", "assalam o alaikum",
+          "sat srī akāl", "khammaghani", "hola", "bonjour", "nomoskaar", "guten tag", "kumusta", "salut", "nômoshkar"]'>
+            <span class="wrap"></span>
+          </span>
+        </h1>
+      <h4 class="subtitle" id="quote">
+      </h4>
+    </div>
+  </div>
+</section>
+
+<div class="main-container">
+  <div class="tile is-ancestor is-vertical">
+
+
+    <nav class="nav has-shadow">
+
+      <div class="nav-left">
+
+        <a href="/" class="nav-item">
+          <span class="icon">
+            <i class="fa fa-home" aria-hidden="true" title="Homepage"></i>
+          </span>
+        </a>
+
+        <a href="https://github.com/abhn" class="nav-item">
+          <span class="icon">
+            <i class="fa fa-github" aria-hidden="true" title="Github"></i>
+          </span>
+        </a>
+
+        <div class="nav-item" id="searchFieldNav">
+          <div class="field has-addons">
+            <p class="control">
+              <input class="input is-small" type="text" placeholder="Find an article" id="search-text">
+            </p>
+            <p class="control">
+              <a class="button is-dark is-small" onclick="searchHandler();">
+                Search
+              </a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="nav-right nav-menu" id='nav-menu'>
+        <a href="/archive" class="nav-item">Archive</a>
+        <a href="/tags" class="nav-item">Tags</a>
+      </div>
+
+      <span class="nav-toggle" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+    </nav>
+
+    <div class="tile is-parent">
+      <div class="tile is-8 is-child main">
+
+        <div class="box">
+    <h1 class="post-title">使用vps下载数据教程</h1>
+    <span class="post-meta">10 March, 2020. It was a Tuesday. <a style="color:grey" href="#disqus_thread"></a></span><hr/>
+
+    <span class="post-text"><h1 id="使用vps下载数据教程">使用VPS下载数据教程</h1>
+
+<p>Author:Silence
+Email:cocoa9th@gmail.com</p>
+
+<h2 id="简介">简介</h2>
+
+<p>入门生物信息学我们首先需要有可分析数据，才能进行后续操作。但目前国内网络环境的限制，使得我们很难畅快地从各大数据库下载数据。今天就为大家推荐一种简单快捷的下载方式——使用VPS下载，再使用FileZilla软件下载到本地。</p>
+
+<h2 id="vps选择">VPS选择</h2>
+
+<p>这里我给大家推荐我一直使用的vultr公司的VPS服务器，大家可以使用我下面发的链接注册使用（PS.如果注册使用的人多我可以免费给大家提供FQ工具)。vultr公司VPS服务器优点：速度不错、稳定且性价比高；按小时计费，能够随时开通和删除服务器。当然大家也可以自行选择，Google搜索可以找到一大堆VPS。</p>
+
+<p>##购买VPS</p>
+
+<p>vultr注册地址：https://www.vultr.com/?ref=8250130</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g8lvllet39j31mj0u0gs2.jpg" alt="Screen Shot 2019-11-04 at 11.14.31 AM" /></p>
+
+<p>注册好后登陆即进入上述页面，点击Billing可以进行充值。</p>
+
+<p><strong>注意：</strong>充值可以选择支付宝或微信，但单次最少充值10美元；推荐选择外币信用卡或者Paypal充值，可选择任意金额，如果只用来下载数据那充值1美元就足够啦。</p>
+
+<p><strong>服务器配置及价格</strong></p>
+
+<p>5美元/月的服务器配置信息： 单核 1G内存 25G SSD硬盘 带宽峰值100M 1000G流量/月</p>
+
+<p>10美元/月的服务器配置信息： 单核 2G内存 55G SSD硬盘 带宽峰值100M 2000G流量/月</p>
+
+<p>20美元/月的服务器配置信息： 2cpu 4G内存 80G SSD硬盘 带宽峰值100M 3000G流量/月</p>
+
+<p>40美元/月的服务器配置信息： 4cpu 8G内存 160G SSD硬盘 带宽峰值100M 4000G流量/月</p>
+
+<p>充值完成后，可根据下图提示开通服务器。</p>
+
+<p><strong>注意：</strong>服务器的选择可根据自己下载文件大小选择，如下载30G大小的文件可选择10美元/月的服务器，开通后每小时<strong>10/30/24=0.0139美元</strong>，下载完成后即可把服务器删除，删除后就不会再扣费，算下来一小时成本不到0.1元。</p>
+
+<p><strong>开通及删除服务器步骤</strong></p>
+
+<p>第一步</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g8m1bd4p8bj31mj0u0q9u.jpg" alt="Screen Shot 2019-11-04 at 11.14.31 AM" /></p>
+
+<p>第二步</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g8m1bcz6lwj31k80u019o.jpg" alt="Screen Shot 2019-11-04 at 3.18.56 PM" /></p>
+
+<p>第三步</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g8m1h8hr2ej31kc0u04b7.jpg" alt="Screen Shot 2019-11-04 at 3.18.56 PM" /></p>
+
+<p>第四步：查看服务器信息及删除服务器</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g8m1o2fgj0j31nt0u0dnd.jpg" alt="Screen Shot 2019-11-04 at 3.31.17 PM" /></p>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g8m1o9k6quj31nr0u07f7.jpg" alt="Screen Shot 2019-11-04 at 3.30.38 PM" /></p>
+
+<p>通过上述步骤，我们已经成功部署了一台Ubuntu服务器。</p>
+
+<p><strong>注意：</strong>服务器类最好选择Ubuntu，自带wget不需要额外的环境配置。另外，下载工具也可以使用健明老师之前推荐的prefetch等，具体方法请自行查找。</p>
+
+<p>接下来我们通过Terminal连接服务器，下载ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE60nnn/GSE60607/suppl/GSE60607_RAW.tar的数据。</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#首先查看服务器能否在国内访问</span>
+ping 167.179.75.187
+<span class="c"># Request timeout for icmp_seq 0</span>
+<span class="c">#一直显示即为无法连接IP，请重新部署服务器</span>
+
+<span class="c">#64 bytes from 149.248.2.86: icmp_seq=0 ttl=47 time=4729.195 ms</span>
+<span class="c">#有该显示即为可以连接上</span>
+
+<span class="c">#连接到服务器，IP地址及密码可在步骤四查看</span>
+ssh root@167.179.75.187
+<span class="c">#复制粘贴输入密码即可登录</span>
+<span class="nb">mkdir </span>data
+<span class="nb">cd </span>data
+wget ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE60nnn/GSE60607/suppl/GSE60607_RAW.tar
+<span class="c">#速度：最高可达17M/s左右，最低6M/s左右，全程基本保持最高速度，偶有波动；25.6G文件总耗时27min左右</span>
+<span class="nb">ls</span> <span class="nt">-lh</span>
+<span class="c">#查看下载情况</span>
+<span class="c">#total 26G</span>
+<span class="c">#-rw-r--r-- 1 root root 26G Nov  4 08:14 GSE60607_RAW.tar</span>
+</code></pre></div></div>
+<p><strong>下载速度展示</strong>
+ <img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g8m334vz1zj30vm0gl47q.jpg" alt="Screen Shot 2019-11-04 at 3.50.57 PM" /></p>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g8m34malqqj30vo0izwp5.jpg" alt="Screen Shot 2019-11-04 at 4.17.00 PM" /></p>
+
+<p>##使用FileZilla下载到本地</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g8m30kqadgj316m0u0tx9.jpg" alt="Screen Shot 2019-11-04 at 4.10.50 PM" /></p>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g8m30qo6q0j316m0u01kx.jpg" alt="Screen Shot 2019-11-04 at 4.17.58 PM" /></p>
+
+<p><strong>注意：</strong>下载到本地速度取决于自己的网速。下载完成后就可删除服务器，避免产生不必要的费用。以后下载再创建一个新服务器即可。</p>
+</span>
+    <br>
+<div class="pagination">
+  
+  <a class="pagination-previous" href="/"><span class=""></span>Back</a>
+  
+  
+</div>
+
+</div>
+
+<!--<div class="box">-->
+    <!-- google ads code box -->
+<!--</div>-->
+
+
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+    
+    var disqus_shortname = 'nagekar'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+      </div>
+
+      <div class="tile is-4 is-child">
+        <div class="tile is-parent is-vertical sidebar">
+
+          <div class="tile is-child widget">
+
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title nice-title">
+                  Recent Posts
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content nice-text">
+                  <ul>
+                  
+                  <li><a href="/2020/03/10/%E4%BD%BF%E7%94%A8VPS%E4%B8%8B%E8%BD%BD%E6%95%B0%E6%8D%AE%E6%95%99%E7%A8%8B/">
+                    使用vps下载数据教程
+                  </a></li>
+                  
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tile is-child widget">
+
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title nice-title">
+                  Sponsored
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content nice-text">
+                  <img src="/assets/images/Dust_Bunny.jpg"/>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tile is-child widget">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title nice-title">
+                  Recommended Websites
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content nice-text">
+                  <ul>
+                    <li>
+                      <a href="https://xkcd.com">xkcd</a>
+                    </li>
+                    <li>
+                      <a href="http://commitstrip.com">Commit Strip</a>
+                    </li>
+                    <li>
+                      <a href="http://www.smbc-comics.com">SMBC Comics</a>
+                    </li>
+                    <li>
+                      <a href="https://blog.codinghorror.com">Coding Horror</a>
+                    </li>
+                    <li>
+                      <a href="http://waitbutwhy.com">Wait Buy Why</a>
+                    </li>
+                    <li>
+                      <a href="https://simplysoch.wordpress.com/">Simply Soch</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        Some rights reserved.
+      </p>
+      <p>
+        Made with <i class="fa fa-heart"></i> and <a href="https://github.com/jgthms/bulma">Bulma</a>, <a href="https://jekyllrb.com/">Jekyll</a>. Hosted on <a href="https://github.com/">Github</a>
+      </p>
+      <p>
+        <a class="icon" href="https://github.com/abhn">
+          <i class="fa fa-github" title="Github"></i>
+        </a>
+        <a class="icon" href="https://in.linkedin.com/in/AbhishekNagekar">
+          <i class="fa fa-linkedin" title="Linkedin"></i>
+        </a>
+        <a class="icon" href="mailto:abhishek@nagekar.com">
+          <i class="fa fa-envelope" title="Email"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- js -->
+<script src="/assets/js/custom.js"></script>
+<script src="/assets/js/typewriter.js"></script>
+</body>
+</html>
