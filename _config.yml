@@ -13,10 +13,10 @@ highlighter: rouge
 title : Soot Spirits
 tagline: Code, Science, Philosophy, Humor
 author :
-  name : silence
-  email : cocoa9th@gmail.com
-  github : silence009
-  twitter : @cocoa9th
+  name : Abhishek Nagekar
+  email : abhishek@nagekar.com
+  github : abhn
+  twitter : abhisheknagekar
   feedburner : AbhishekN
 
 # The production_url is only used when full-domain names are needed
@@ -27,7 +27,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : qinglin.ml
+production_url : https://www.nagekar.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
