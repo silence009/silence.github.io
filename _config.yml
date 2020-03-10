@@ -27,7 +27,11 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
+<<<<<<< HEAD
 production_url : https://www.nagekar.com
+=======
+production_url : qinglin.ml
+>>>>>>> ca15b9dc9a269f724b604bb31edc6cd33033ed36
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
