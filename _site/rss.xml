@@ -5,19 +5,14 @@
         <description>Soot Spirits - silence</description>
         <link>https://qinglin.ml</link>
         <atom:link href="https://qinglin.ml/rss.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Tue, 10 Mar 2020 20:16:12 +0800</lastBuildDate>
-        <pubDate>Tue, 10 Mar 2020 20:16:12 +0800</pubDate>
+        <lastBuildDate>Tue, 10 Mar 2020 20:32:36 +0800</lastBuildDate>
+        <pubDate>Tue, 10 Mar 2020 20:32:36 +0800</pubDate>
         <ttl>60</ttl>
 
 
         <item>
-                <title>使用vps下载数据教程</title>
-                <description>&lt;h1 id=&quot;使用vps下载数据教程&quot;&gt;使用VPS下载数据教程&lt;/h1&gt;
-
-&lt;p&gt;Author:Silence
-Email:cocoa9th@gmail.com&lt;/p&gt;
-
-&lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
+                <title>使用VPS下载数据教程</title>
+                <description>&lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
 
 &lt;p&gt;入门生物信息学我们首先需要有可分析数据，才能进行后续操作。但目前国内网络环境的限制，使得我们很难畅快地从各大数据库下载数据。今天就为大家推荐一种简单快捷的下载方式——使用VPS下载，再使用FileZilla软件下载到本地。&lt;/p&gt;
 
@@ -27,7 +22,7 @@ Email:cocoa9th@gmail.com&lt;/p&gt;
 
 &lt;p&gt;##购买VPS&lt;/p&gt;
 
-&lt;p&gt;vultr注册地址：https://www.vultr.com/?ref=8250130&lt;/p&gt;
+&lt;p&gt;vultr注册地址：&lt;a href=&quot;https://www.vultr.com/?ref=8250130&quot;&gt;https://www.vultr.com/?ref=8250130&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/006y8mN6gy1g8lvllet39j31mj0u0gs2.jpg&quot; alt=&quot;Screen Shot 2019-11-04 at 11.14.31 AM&quot; /&gt;&lt;/p&gt;
 
